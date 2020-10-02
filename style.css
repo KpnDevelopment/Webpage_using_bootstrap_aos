@@ -42,7 +42,7 @@ body
     text-align: center;
 }
 .carousel-item{
-    background: black;
+    background: rgba(0, 0, 0, 0.514);
     height: 100vh;
     /* text-align: center; */
 }
@@ -92,6 +92,9 @@ h3.heading {
     padding: 0;
 
 }
+.row.no-padding {
+    justify-content: center;
+}
 .portfolio img:hover {
     transform: scale(1.1);
     cursor: zoom-in;
@@ -99,8 +102,8 @@ h3.heading {
 }
 .portfolio {
     overflow: hidden;
-    margin-left: 100px;
-    margin-bottom: 20px;
+    text-align: center;
+    justify-content: center;
 }
 
 /* portfolio end */
@@ -143,7 +146,7 @@ h3.heading {
 /* team section end */
 /* contact */
 footer {
-    background-color: #40474e;
+    background-color: rgba(0, 0, 0, 0.932);
     padding: 2rem 0 3rem;
     margin-top: 1rem;
 }
@@ -152,12 +155,27 @@ footer img {
     margin: 1.5rem 0;
     
 }
+.col-md-5 p{
+    color: whitesmoke;
+    opacity: .5;
+}
+.col-md-5 p:hover{
+    opacity: 1;
+}
+.col-md-5{
+    color: whitesmoke;
+}
 footer svg {
     font-size: 1.6rem;
     margin: 1.2rem .5rem 0 0;
-}
-footer svg {
     color: white;
+}
+footer svg:hover {
+    color: beige;
+}
+hr {
+    color: whitesmoke;
+    background: whitesmoke;
 }
 hr.socket {
     border-top: .2rem solid #666666;
