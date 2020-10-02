@@ -2,6 +2,14 @@ body
 {
     overflow-x: hidden;
     font-family: sans-serif;
+    background: rgba(77, 77, 71, 0.849);
+
+}
+.offset:before {
+    height: 10rem;
+    margin-top: -10rem;
+    content: "";
+    display: block;
 
 }
 /* navbar */
@@ -27,7 +35,107 @@ body
     color: #1ebba3;
 
 }
+/* navbar end */
+/* slider Start  */
 .slide-h3 {
     font-size: 50px;
     text-align: center;
+}
+.carousel-item{
+    height: 100vh;
+}
+.carousel-caption {
+    position: absolute;
+    top: 38%;
+    text-transform: uppercase; 
+}
+.carousel-caption h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: .3rem; 
+    text-shadow: .1rem .1rem .2rem black;
+    padding: 1rem;
+
+}
+.carousel-caption p {
+    font-size: 1rem;
+    text-shadow: .1rem .1rem .2rem black;
+    padding-bottom: 1.6rem;
+}
+/* slider end */
+/* portfolio start */
+.jambotron {
+    border-radius: 0;
+    padding: 3rem 0 2rem;
+    margin-bottom: 0;
+}
+h3.heading {
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+
+}
+.heading-underline {
+    width: 3rem;
+    height: .2rem;
+    background-color: cadetblue;
+    margin: 0 auto 2rem;
+}
+/* images */
+.portfolio img {
+    max-width: 100%;
+    transition: transform .5s ease;
+}
+.row.no-padding [class*=col-] {
+    padding: 0;
+
+}
+.portfolio img:hover {
+    transform: scale(1.1);
+    cursor: zoom-in;
+    
+}
+.portfolio {
+    overflow: hidden;
+}
+
+/* portfolio end */
+/* team section */
+
+.card{
+    margin: 2rem;
+
+}
+/* team section end */
+/* contact */
+footer {
+    background-color: #40474e;
+    padding: 2rem 0 3rem;
+    margin-top: 1rem;
+}
+footer img {
+    height: 3rem;
+    margin: 1.5rem 0;
+    
+}
+footer svg {
+    font-size: 1.6rem;
+    margin: 1.2rem .5rem 0 0;
+}
+footer svg {
+    color: white;
+}
+hr.socket {
+    border-top: .2rem solid #666666;
+    width: 100%;
+}
+
+
+/* contact end */
+
+/* media Querys */
+
+@media (max-width: 767px) {
+    
 }
