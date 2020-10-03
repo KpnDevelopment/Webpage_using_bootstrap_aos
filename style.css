@@ -83,6 +83,12 @@ h3.heading {
     background-color: cadetblue;
     margin: 0 auto 2rem;
 }
+.underline-bottom {
+    width: rem;
+height: .2rem;
+background-color: cadetblue;
+margin: 0 auto 2rem;
+}
 /* images */
 .portfolio img {
     max-width: 100%;
@@ -128,6 +134,7 @@ h3.heading {
     box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
 
 }
+
 
 
 
@@ -373,6 +380,7 @@ footer .row .col-md-5 a i{
     background: white;
     border-radius: 20px;
     padding: 10px;
+    margin-left: 10px;
     opacity: .9;
     /* background: white; */
 
