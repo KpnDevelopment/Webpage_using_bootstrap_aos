@@ -355,16 +355,30 @@ footer img {
 .col-md-5 p:hover{
     opacity: 1;
 }
-.col-md-5{
+.col-md-5{  
     color: whitesmoke;
 }
 footer svg {
+    opacity: .2s;
     font-size: 1.6rem;
     margin: 1.2rem .5rem 0 0;
     color: white;
 }
 footer svg:hover {
-    color: beige;
+    opacity: 1;
+}
+footer .row .col-md-5 a i{
+    width: 100px;
+    height: 100px;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    opacity: .9;
+    /* background: white; */
+
+}
+footer .row .col-md-5 a i:hover {
+    opacity: 1;
 }
 hr {
     color: whitesmoke;
