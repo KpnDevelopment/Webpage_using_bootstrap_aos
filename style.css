@@ -1,28 +1,38 @@
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,300&display=swap');
+
+
 body
 {
     overflow-x: hidden;
-    font-family: Montserrat;
+    font-family: 'Montserrat', sans-serif; font-weight: 700;
     background: black; 
 
 }
 .offset:before {
-    height: 10rem;
-    margin-top: -10rem;
+    height: 2rem;
+    margin-top: -2rem;
     content: "";
     display: block;
 
 }
 .go-top-btn i {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   position: fixed;
-  background: white;
-  border-radius: 20px;
+  color: white;
+  background: #0f3959;
+  border-radius: 30px;
   padding: 10px;
-  opacity: .9;
+  padding-top: 16px;
+  opacity: .8;
   right: 40px;
   bottom: 40px;
-    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.829);
+  box-shadow: -1px 10px 40px -12px rgba(0, 0, 0, 0.849);
+}
+.go-top-btn i:hover{
+  opacity: 1;
 }
 /* navbar */
 .navbar {
@@ -30,6 +40,7 @@ body
     font-weight: 700;
     letter-spacing: .1rem;
     background: rgba(0, 0, 0, 0.6)!important;
+    
 }
 .navbar-brand {
     height: 2rem;
@@ -42,6 +53,7 @@ body
     color: white;
     padding-top: .8rem;
 }
+
 .navbar-dark .navbar-nav .nav-link.active,
 .navbar-dark .navbar-nav .nav-link:hover {
     color: #1ebba3;
@@ -107,7 +119,8 @@ margin: 0 auto 2rem;
     transition: transform .5s ease;
 }
 .row.no-padding [class*=col-] {
-    padding: 0;
+    padding: 20px;
+    padding-left: 20px;
 
 }
 .row.no-padding {
@@ -166,7 +179,7 @@ margin: 0 auto 2rem;
 
 /* Contact US Start */
 
-.contact .info {
+.cont .info {
     border-top: 3px solid #0f3959;
     border-bottom: 3px solid  #0f3959;
     padding: 30px;
@@ -175,7 +188,7 @@ margin: 0 auto 2rem;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.1);
   }
   
-  .contact .info i {
+  .cont .info i {
     font-size: 20px;
     color: #0f3959;
     float: left;
@@ -189,7 +202,7 @@ margin: 0 auto 2rem;
     transition: all 0.3s ease-in-out;
   }
   
-  .contact .info h4 {
+  .cont .info h4 {
     padding: 0 0 0 60px;
     font-size: 22px;
     font-weight: 600;
@@ -197,22 +210,22 @@ margin: 0 auto 2rem;
     color: #37517e;
   }
   
-  .contact .info p {
+  .cont .info p {
     padding: 0 0 10px 60px;
     margin-bottom: 20px;
     font-size: 14px;
     color: #6182ba;
   }
   
-  .contact .info .email p {
+  .cont .info .email p {
     padding-top: 5px;
   }
   
-  .contact .info .social-links {
+  .cont .info .social-links {
     padding-left: 60px;
   }
   
-  .contact .info .social-links a {
+  .cont .info .social-links a {
     font-size: 18px;
     display: inline-block;
     background: #333;
@@ -227,17 +240,17 @@ margin: 0 auto 2rem;
     margin-right: 10px;
   }
   
-  .contact .info .social-links a:hover {
+  .cont .info .social-links a:hover {
     background: #0f3959;
     color: #fff;
   }
   
-  .contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  .cont .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
     background: #0f3959;
     color: #fff;
   }
   
-  .contact .php-email-form {
+  .cont .php-email-form {
     width: 100%;
     border-top: 3px solid  #0f3959;
     border-bottom: 3px solid  #0f3959;
@@ -246,11 +259,11 @@ margin: 0 auto 2rem;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   }
   
-  .contact .php-email-form .form-group {
+  .cont .php-email-form .form-group {
     padding-bottom: 8px;
   }
   
-  .contact .php-email-form .validate {
+  .cont .php-email-form .validate {
     display: none;
     color: red;
     margin: 0 0 15px 0;
@@ -258,7 +271,7 @@ margin: 0 auto 2rem;
     font-size: 13px;
   }
   
-  .contact .php-email-form .error-message {
+  .cont .php-email-form .error-message {
     display: none;
     color: #fff;
     background: #ed3c0d;
@@ -267,11 +280,11 @@ margin: 0 auto 2rem;
     font-weight: 600;
   }
   
-  .contact .php-email-form .error-message br + br {
+  .cont .php-email-form .error-message br + br {
     margin-top: 25px;
   }
   
-  .contact .php-email-form .sent-message {
+  .cont .php-email-form .sent-message {
     display: none;
     color: #fff;
     background: #0f3959;
@@ -280,14 +293,14 @@ margin: 0 auto 2rem;
     font-weight: 600;
   }
   
-  .contact .php-email-form .loading {
+  .cont .php-email-form .loading {
     display: none;
     background: #fff;
     text-align: center;
     padding: 15px;
   }
   
-  .contact .php-email-form .loading:before {
+  .cont .php-email-form .loading:before {
     content: "";
     display: inline-block;
     border-radius: 50%;
@@ -300,26 +313,26 @@ margin: 0 auto 2rem;
     animation: animate-loading 1s linear infinite;
   }
   
-  .contact .php-email-form input, .contact .php-email-form textarea {
+  .cont .php-email-form input, .contact .php-email-form textarea {
     border-radius: 0;
     box-shadow: none;
     font-size: 14px;
     border-radius: 4px;
   }
   
-  .contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  .cont .php-email-form input:focus, .contact .php-email-form textarea:focus {
     border-color: #47b2e4;
   }
   
-  .contact .php-email-form input {
+  .cont .php-email-form input {
     height: 44px;
   }
   
-  .contact .php-email-form textarea {
+  .cont .php-email-form textarea {
     padding: 10px 12px;
   }
   
-  .contact .php-email-form button[type="submit"] {
+  .cont .php-email-form button[type="submit"] {
     background: #0f3959;
     border: 0;
     opacity: 0.95;
@@ -329,7 +342,7 @@ margin: 0 auto 2rem;
     border-radius: 50px;
   }
   
-  .contact .php-email-form button[type="submit"]:hover {
+  .cont .php-email-form button[type="submit"]:hover {
     background: #0f3959;
     opacity: 1;
   }
