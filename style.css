@@ -1,7 +1,7 @@
 body
 {
     overflow-x: hidden;
-    font-family: sans-serif;
+    font-family: Montserrat;
     background: black; 
 
 }
@@ -11,6 +11,18 @@ body
     content: "";
     display: block;
 
+}
+.go-top-btn i {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+  opacity: .9;
+  right: 40px;
+  bottom: 40px;
+    box-shadow: -1px 9px 40px -12px rgba(0, 0, 0, 0.829);
 }
 /* navbar */
 .navbar {
