@@ -490,6 +490,9 @@
             <!--End Row-->
           </footer>
           <!-- End bittom Section -->
+          <!-- Loader start -->
+          <div class="loader"></div>
+          <!-- loader end -->
 
 
 
@@ -503,6 +506,14 @@
             AOS.init();
           </script>
           <a class="go-top-btn text-center animate__animated animate__pulse" href="#"><i class="icofont-stylish-up" data-aos="zoom-out"></i></a>
+
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+          <script type="text/javascript">
+            $(window).load(function() {
+                $(".loader").fadeOut("slow");
+            });
+          </script>
 </body>
 
 </html>
